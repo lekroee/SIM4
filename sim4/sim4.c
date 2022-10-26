@@ -234,6 +234,7 @@ int  fill_CPUControl(InstructionFields *fields, CPUControl *controlOut) {
 				controlOut -> regWrite = 1;
 				controlOut -> branch = 0;
 				controlOut -> jump = 0;
+				return 1;
 		case(35): // lw
 				controlOut -> ALUsrc = 1;
 				controlOut -> ALU.op = 2;
